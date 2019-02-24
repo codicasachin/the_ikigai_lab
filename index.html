@@ -23,7 +23,8 @@
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
+ <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
 
@@ -59,11 +60,10 @@
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
           <li class="active"><a href="#intro" style="padding-top: 20px;">Home</a></li>
-          <li><a href="aboutUs.html" style="padding-top: 20px;">About Us</a></li>
           <li><a href="#services" style="padding-top: 20px;">How it Works!</a></li>
           <li><a href="#portfolio" style="padding-top: 20px;">Programs</a></li>
           <!-- <li><a href="#team">Team</a></li> -->
-          <li class="drop-down" style=""><a href="">Drop Down</a>
+          <!-- <li class="drop-down" style=""><a href="">Drop Down</a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
               <li class="drop-down"><a href="#">Drop Down 2</a>
@@ -79,8 +79,9 @@
               <li><a href="#">Drop Down 4</a></li>
               <li><a href="#">Drop Down 5</a></li>
             </ul>
-          </li>
-          <li><a href="#contact" style="padding-top: 20px;">Contact Us</a></li>
+          </li> -->
+          <li><a href="aboutUs.html" style="padding-top: 20px;">About Us</a></li>
+          <li><a href="#register" style="padding-top: 20px;"><strong>Register for DSAT</strong></a></li>
         </ul>
       </nav><!-- .main-nav -->
       
@@ -91,6 +92,8 @@
     Intro Section
   ============================-->
   <section id="intro" class="clearfix">
+   <div id="particles.js"></div>
+
     <!-- <div class="container">
 
       <div class="intro-img">
@@ -106,14 +109,16 @@
       </div>
 
     </div> -->
+     
+
     <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
   <div class=" container carousel-inner">
     <div class="carousel-item active" data-interval="1000">
-       <div class="intro-img">
+        <div class="intro-img">
         <img src="img/iki.png" alt="" class="img-fluid" >
       </div>
       <div class=" intro-info" style="padding-top: 60px;">
-        <h2>Struggle to find right<br><span>Data Science </span> & <span> Machine Learning</span><br>Internships ?</h2>
+        <h2>Struggle to find the right<br><span>Data Science </span> & <span> Machine Learning</span><br>Internships ?</h2>
         <div>
           <a href="#about" class="btn-get-started scrollto">Know More</a>
           <!-- <a href="#services" class="btn-services scrollto">Our Services</a> -->
@@ -148,6 +153,7 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+
   </section><!-- #intro -->
 
   <main id="main">
@@ -181,10 +187,6 @@
       Portfolio Section
     ============================-->
     <div class="container">
-          <!-- <h2>Modal Example</h2>
-          Trigger the modal with a button -->
-          <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
-
           <!-- Modal -->
           <div class="modal fade" id="myModal" role="dialog" >
             <div class="modal-dialog">
@@ -245,7 +247,7 @@
                 <p class="card-text"><small class="text-muted">Duration :<br> 20 Hours</small></p>
               </div>
               <div class="card-footer  learnmore">
-                <small  class="text-muted"  data-toggle="modal" data-target="#myModal">Learn More </button>
+                <small  class="text-muted"  data-toggle="modal" data-target="#myModal" >Learn More </small>
               </div>
             </div>
           </div>
@@ -265,12 +267,12 @@
             <div class="card wow bounceInUp ">
               <img class="card-img-top " src="img/portfolio/web3.jpg" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title" style="font-weight: 700; color:#345487;  " >Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Duration 31 Hours</small></p>
+                <h5 class="card-title" style="font-weight: 700; color:#345487;  " >Recruit</h5>
+                <p class="card-text">Strengthen your data science team by hiring right talent and Skill, We offer scientific ways to identify data science aptitude and match right skills to right role in data science team.</p>
+                <p class="card-text"><small class="text-muted"></small></p>
               </div>
               <div class="card-footer learnmore">
-                <small class="text-muted">Learn More </small>
+                <small class="text-muted" data-toggle="modal" data-target="#myModal">Learn More </small>
               </div>
             </div>
           </div>
@@ -296,7 +298,7 @@
                  24 Hrs of Capstone Project .</small></p>
               </div>
               <div class="card-footer learnmore">
-                <small class="text-muted">Learn More </small>
+                <small class="text-muted" data-toggle="modal" data-target="#myModal">Learn More </small>
               </div>
             </div>
           </div>
@@ -316,17 +318,17 @@
             <div class="card wow bounceInUp">
               <img class="card-img-top " src="img/portfolio/app2.jpg" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title" style="font-weight: 700; color:#345487;  ">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Duration 31 Hours</small></p>
+                <h5 class="card-title" style="font-weight: 700; color:#345487;  ">PGP-Data Science</h5>
+                <p class="card-text">It is a classroom style seven month weekend program to initiate students into Data science.</p>
+                <p class="card-text"><small class="text-muted">Duration 7 Months</small></p>
               </div>
               <div class="card-footer learnmore">
-                <small class="text-muted">Learn More </small>
+                <small class="text-muted" data-toggle="modal" data-target="#myModal">Learn More</small>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s"> -->
            <!--  <div class="portfolio-wrap">
               <img src="img/portfolio/web2.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -338,18 +340,18 @@
                 </div>
               </div>
             </div> -->
-            <div class="card wow bounceInUp">
+            <!-- <div class="card wow bounceInUp">
               <img class="card-img-top " src="img/portfolio/web2.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title" style="font-weight: 700; color:#345487;  ">Card title</h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Duration 31 Hours</small></p>
+                <p class="card-text"><small class="text-muted">Duration 7 Months</small></p>
               </div>
               <div class="card-footer learnmore">
-                <small class="text-muted">Learn More </small>
+                <small class="text-muted" data-toggle="modal" data-target="#myModal">Learn More</small>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
             <!-- <div class="portfolio-wrap">
@@ -366,12 +368,12 @@
             <div class="card wow bounceInUp">
               <img class="card-img-top " src="img/portfolio/app3.jpg" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title" style="font-weight: 700; color:#345487;  ">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Duration 31 Hours</small></p>
+                <h5 class="card-title" style="font-weight: 700; color:#345487;  ">AI for Practitioners : Fast Track AI</h5>
+                <p class="card-text">Helps to fill critical analytics skill gap in your technical team in a short span of time</p>
+                <p class="card-text"><small class="text-muted">Duration <br>20 Hours</small></p>
               </div>
               <div class="card-footer learnmore">
-                <small class="text-muted">Learn More </small>
+                <small class="text-muted" data-toggle="modal" data-target="#myModal">Learn More </small>
               </div>
             </div>
           </div>
@@ -388,7 +390,7 @@
                 </div>
               </div>
             </div> -->
-            <div class="card wow bounceInUp">
+           <!--  <div class="card wow bounceInUp">
               <img class="card-img-top " src="img/portfolio/card1.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title" style="font-weight: 700; color:#345487;  ">Card title</h5>
@@ -396,12 +398,12 @@
                 <p class="card-text"><small class="text-muted">Duration 31 Hours</small></p>
               </div>
               <div class="card-footer learnmore">
-                <small class="text-muted">Learn More </small>
+                <small class="text-muted" data-toggle="modal" data-target="#myModal">Learn More </small>
               </div>
             </div>
-          </div>
+          </div> -->
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s">
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s"> -->
             <!-- <div class="portfolio-wrap">
               <img src="img/portfolio/card3.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -413,7 +415,7 @@
                 </div>
               </div>
             </div> -->
-            <div class="card wow bounceInUp">
+            <!-- <div class="card wow bounceInUp">
               <img class="card-img-top " src="img/portfolio/card3.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title" style="font-weight: 700; color:#345487;  ">Card title</h5>
@@ -421,12 +423,12 @@
                 <p class="card-text"><small class="text-muted">Duration 31 Hours</small></p>
               </div>
               <div class="card-footer learnmore">
-                <small class="text-muted">Learn More </small>
+                <small class="text-muted" data-toggle="modal" data-target="#myModal">Learn More </small>
               </div>
             </div>
-          </div>
+          </div> -->
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s">
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s"> -->
             <!-- <div class="portfolio-wrap">
               <img src="img/portfolio/web1.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -438,7 +440,7 @@
                 </div>
               </div>
             </div> -->
-            <div class="card wow bounceInUp">
+            <!-- <div class="card wow bounceInUp">
               <img class="card-img-top " src="img/portfolio/web1.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title" style="font-weight: 700; color:#345487;  ">Card title</h5>
@@ -446,9 +448,9 @@
                 <p class="card-text"><small class="text-muted">Duration 31 Hours</small></p>
               </div>
               <div class="card-footer learnmore learnmore">
-                <small class="text-muted">Learn More </small>
+                <small class="text-muted" data-toggle="modal" data-target="#myModal">Learn More </small>
               </div>
-            </div>
+            </div> -->
           </div>
 
         </div>
@@ -522,6 +524,52 @@
               <p class="description">Figure out where you stand by competeting against the best AI,ML talent.</p>
             </div>
           </div> -->
+
+
+<!-- <div class="flex-column col-md-4">
+            <div class="col-md-6 col-lg-11 offset-lg-1 wow bounceInUp" data-wow-duration="1.4s">
+                <div class="box">
+                  <div class="icon"><i class="ion-ios-arrow-down" style="color: #ff787b; margin-left: 12px;"></i></div>
+                  <h4 class="title" style="left:40%;"><a href="">Are you an EMPLOYER ?</a></h4>
+                  
+                </div>
+              </div>
+            <div class="col-md-6 col-lg-11 offset-lg-1 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon"><i class="ion-ios-speedometer-outline" style="color:#41cf2e;"></i></div>
+              <h4 class="title"><a href="">Look at DSAT scores</a></h4>
+              <p class="description">Look at DSAT profile for candidates to gauge their skills.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-11  offset-lg-1 wow bounceInUp" data-wow-duration="1.4s">
+              <div class="box">
+                <div class="icon"><i class="ion-ios-bookmarks-outline" style="color: #e9bf06;"></i></div>
+                <h4 class="title"><a href="">Increase your reach by 3X</a></h4>
+                <p class="description">Find the right candidates from a large pool.</p>
+              </div>
+              </div>
+
+          
+          <div class="col-md-6 col-lg-11  offset-lg-1 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon"><i class="ion-ios-clock-outline" style="color: #4680ff;"></i></div>
+              <h4 class="title"><a href="">Hire the best AI/DS talent</a></h4>
+              <p class="description">Hire the right candidate with minimum efforts.</p>
+            </div>
+          </div>
+
+          </div> -->
+
+
+
+          <!-- 
+
+
+
+
+
+
+           -->
           <div class="flex-column col-lg-6">
             <div class="col-md-6 col-lg-11 offset-lg-1 wow bounceInUp" data-wow-duration="1.4s">
                 <div class="box">
@@ -888,6 +936,8 @@
       </div>
     </section><!-- #team -->
 
+
+
     <!--==========================
       Clients Section
     ============================-->
@@ -1095,7 +1145,8 @@
   <script src="lib/lightbox/js/lightbox.min.js"></script>
   <!-- Contact Form JavaScript File -->
   <script src="contactform/contactform.js"></script>
-
+  <script src="js/particles.js"></script>
+  <script src="js/app.js"></script>
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
 
