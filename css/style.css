@@ -737,7 +737,37 @@ h6 {
 
 /* Portfolio Section
 --------------------------------*/
+ .card-img-top:hover{
+opacity: 1;
+  border-radius: 15px;
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+  width: 100%;
+  opacity: 0.8;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
 
+.learnmore:hover {
+  cursor: pointer;
+    /*margin: 15px 15px 15px 0;*/
+    display: inline-block;
+    /*padding: 16px 20px;*/
+    font-size: 14px;
+    line-height: 20px;
+    color: #007bff;
+    border-radius: 0px;
+    /*text-transform: uppercase;*/
+    background: #ecf5ff;
+    margin-bottom: 0px;
+    transition: all 0.3s ease-in-out;
+}
 #portfolio {
   padding: 60px 0;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
@@ -952,6 +982,7 @@ blog-img {
 
 .blog-img img:hover {
   opacity: 1;
+  border-radius: 15px;
   -webkit-transform: scale(1.05);
   -moz-transform: scale(1.05);
   -ms-transform: scale(1.05);
