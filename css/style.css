@@ -882,8 +882,28 @@ h6 {
 #portfolio .portfolio-item .portfolio-wrap:hover .portfolio-info {
   opacity: 1;
 }
+#portfolio .portfolio-item .card:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+  border-radius: 5px;
+}
+#portfolio .portfolio-item .card {
+  width: 100%;
+  opacity: 0.8;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
 
-
+#portfolio .portfolio-item .card .learnmore {
+  cursor: pointer;
+}
 
 /* Testimonials Section
 --------------------------------*/
@@ -960,6 +980,7 @@ blog-img {
   -ms-transform: scale(1.05);
   -o-transform: scale(1.05);
   transform: scale(1.05);
+  border-radius: 10px;
 }
 
 .blog-img img {
